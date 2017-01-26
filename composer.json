@@ -1,0 +1,29 @@
+{
+  "name": "bcscoder/admin-theme",
+  "type": "asgard-theme",
+  "description": "An AsgardCMS administration theme",
+  "keywords": [
+    ""
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Agus Yusida",
+      "email": "info@bcodes.info",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan stylist:publish"
+    ],
+    "post-update-cmd": [
+      "php artisan stylist:publish"
+    ]
+  },
+  "minimum-stability": "dev"
+}
